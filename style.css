@@ -1,0 +1,70 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.header-title{
+	color: black;
+	text-align: center;
+}
+
+.sections{
+	color: grey;
+	padding-left: 20%;
+	padding-right: 20%;
+	font-size: 20px;
+	text-align: center;
+}
+
+.black-line{
+	border-color: black;
+}
+
+.tennis-team{
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+.attr-section{
+	padding: 30px;
+}
+
+.social-media-area{
+	display: block;
+}
+
+.social-icons{
+	padding: 0;
+ 	width: 50px;
+  	height: auto;
+}
+
+.hover-spin{
+	border-radius: 50%;
+	-webkit-animation:unspin 0.5s;
+  	-moz-animation:unspin 0.5s;
+	animation:unspin 0.5s;
+}
+
+/*pseudo element :hover*/
+.hover-spin:hover{
+	border-radius: 50%;
+	-webkit-animation:spin 0.5s;
+  	-moz-animation:spin 0.5s;
+	animation:spin 0.5s;
+}
+
+.gene_block{
+	background-repeat: no-repeat;
+}
+
+/*
+CSS animation/transition
+*/
+@-moz-keyframes unspin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes unspin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes unspin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
